@@ -2,6 +2,7 @@ import express from "express";
 import getPost from "./api.test.js";
 import getPostcodes from "./postcodeAutocomplete.js";
 import getLat from "./postcode.js";
+import sendEmailRouter from "./sendEmail.js";
 
 const router = express.Router();
 
@@ -38,5 +39,9 @@ router.get("/api/getLat", async (req, res) => {
   console.log("from the router");
   console.log(data);
 });
+
+//API endpoint for the contact email submission
+
+router.use("/api/send-email", sendEmailRouter);
 
 export default router;
