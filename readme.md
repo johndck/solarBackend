@@ -25,12 +25,15 @@ Hosting: The React application is hosted on Netlify & the Node.js back-end is ho
 
 The API has 4 endpoints:
 
-/api/solar
-/api/auto
-/api/getLat
-/api/send-email
+#### /api/solar
 
-The endpoints are currently deployed on a
+#### /api/auto
+
+#### /api/getLat
+
+#### /api/send-email
+
+The endpoints are currently deployed on a cloud based node service running on Heroku.
 
 ## Usage
 
