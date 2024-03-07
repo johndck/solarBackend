@@ -4,7 +4,7 @@ async function getPostcodes(code) {
   try {
     console.log(code);
     const response = await fetch(
-      `https://api.postcodes.io/postcodes/${code}/autocomplete?limit=20`
+      `https://api.postcodes.io/postcodes/${code}/autocomplete?limit=10`
     );
     const data = await response.json();
     console.log(data);
